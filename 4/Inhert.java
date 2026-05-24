@@ -39,30 +39,47 @@
 
 
 
+// class A{
+//     A(){
+//         System.out.println("A constructor");
+//     }
+// }
+
+// class B extends A{
+//     B(){
+//         System.out.println("B constructor");
+//     }
+// }
+
+// class C extends B{
+//     C(){
+//         System.out.println("C constructor");
+//     }
+// }
+
+// class Inhert{
+//     public static void main(String []args)
+//     {
+//         C c = new C();
+//     }
+// }
+
+
+//single level inheritance
 class A{
-    A(){
-        System.out.println("A constructor");
+    void show(){
+        System.out.println("A class");
     }
 }
-
 class B extends A{
-    B(){
-        System.out.println("B constructor");
+    void display(){
+        System.out.println("B class");
     }
 }
-
-class C extends B{
-    C(){
-        System.out.println("C constructor");
+public class Inhert {
+    public static void main(String[] args) {
+        B b = new B();
+        b.show();
+        b .display();
     }
 }
-
-class Inhert{
-    public static void main(String []args)
-    {
-        C c = new C();
-    }
-}
-
-
-
