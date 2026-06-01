@@ -22,7 +22,7 @@ import java.util.*;
 class Main {
       public static void main(String[] args) {
 
-        String s = "welcome";
+        String s = "abciiidef";
 
         int[][] queries = {{ 0, 4 },{ 1, 3 },{ 2, 5 }};
 
