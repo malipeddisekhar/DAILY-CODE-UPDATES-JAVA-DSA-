@@ -76,6 +76,10 @@ class Solution {
             }
         }
     }
+
+    void nextPermutation(int[] nums) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
 }
 
 // Main class to run the program
