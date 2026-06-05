@@ -1,4 +1,4 @@
-class Main
+class MaximumSubarraySum
 {
     public static void main(String[] args)
     {
