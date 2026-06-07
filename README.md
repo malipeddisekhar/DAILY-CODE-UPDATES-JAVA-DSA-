@@ -1,5 +1,27 @@
 # Strivers SDE Sheet - Top Coding Interview Problems | DSA Mastery
 
+<div align="center">
+
+### 📊 Repository Views Counter
+
+![Views](https://komarev.com/ghpvc/?username=MALIPEDD_SEKHAR&repo=CRT&color=0891b2&style=flat-square&label=Total%20Repo%20Views)
+
+[![GitHub followers](https://img.shields.io/github/followers/MALIPEDD_SEKHAR?style=flat-square&label=GitHub%20Followers&color=blue)](https://github.com/MALIPEDD_SEKHAR)
+[![Stars](https://img.shields.io/github/stars/MALIPEDD_SEKHAR/CRT?style=flat-square&color=yellow&label=Stars)](https://github.com/MALIPEDD_SEKHAR/CRT)
+
+<style>
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+.counter-badge {
+  animation: pulse 2s ease-in-out infinite;
+  display: inline-block;
+}
+</style>
+
+</div>
+
 > **Strivers' Daily Challenge: 3 Problems Per Day | Mastering Top Coding Interview Questions in Java**
 
 This repository contains **comprehensive solutions to the Strivers SDE Sheet** - a carefully curated collection of the most asked coding interview questions from tech giants like **Google, Amazon, Microsoft, Facebook, Meta, Swiggy, Flipkart, and many more**.
