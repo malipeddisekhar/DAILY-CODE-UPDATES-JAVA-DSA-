@@ -2,25 +2,20 @@
 
 <div align="center">
 
-### 📊 Repository Views Counter
+## 📊 Repository Stats & Views Counter
 
-![Views](https://komarev.com/ghpvc/?username=MALIPEDD_SEKHAR&repo=CRT&color=0891b2&style=flat-square&label=Total%20Repo%20Views)
+<!-- Profile views counter -->
+<img alt="Views" src="https://komarev.com/ghpvc/?username=MALIPEDD_SEKHAR&repo=CRT&color=0891b2&style=plastic&label=Repository%20Views" />
 
-[![GitHub followers](https://img.shields.io/github/followers/MALIPEDD_SEKHAR?style=flat-square&label=GitHub%20Followers&color=blue)](https://github.com/MALIPEDD_SEKHAR)
-[![Stars](https://img.shields.io/github/stars/MALIPEDD_SEKHAR/CRT?style=flat-square&color=yellow&label=Stars)](https://github.com/MALIPEDD_SEKHAR/CRT)
+<!-- GitHub Stats with animations -->
 
-<style>
-@keyframes pulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.8; transform: scale(1.05); }
-}
-.counter-badge {
-  animation: pulse 2s ease-in-out infinite;
-  display: inline-block;
-}
-</style>
+[![GitHub followers](https://img.shields.io/github/followers/MALIPEDD_SEKHAR?style=social&label=Follow)](https://github.com/MALIPEDD_SEKHAR)
+[![GitHub stars](https://img.shields.io/github/stars/MALIPEDD_SEKHAR/CRT?style=social&label=Stars)](https://github.com/MALIPEDD_SEKHAR/CRT)
+[![GitHub forks](https://img.shields.io/github/forks/MALIPEDD_SEKHAR/CRT?style=social&label=Forks)](https://github.com/MALIPEDD_SEKHAR/CRT)
 
 </div>
+
+---
 
 > **Strivers' Daily Challenge: 3 Problems Per Day | Mastering Top Coding Interview Questions in Java**
 
