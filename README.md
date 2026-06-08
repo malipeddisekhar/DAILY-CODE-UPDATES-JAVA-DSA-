@@ -2,10 +2,9 @@
 
 <div align="center">
 
-![Profile Views](https://komarev.com/ghpvc/?username=MALIPEDD_SEKHAR&color=0891b2&style=for-the-badge&label=PROFILE+VIEWS)
-![Repo Views](https://visitor-badge.laobi.icu/badge?page_id=MALIPEDD_SEKHAR.CRT&left_color=0f172a&right_color=7c3aed&left_text=REPO+VIEWS)
-[![Stars](https://img.shields.io/github/stars/MALIPEDD_SEKHAR/CRT?style=for-the-badge&color=f59e0b&label=STARS)](https://github.com/MALIPEDD_SEKHAR/CRT/stargazers)
-[![Forks](https://img.shields.io/github/forks/MALIPEDD_SEKHAR/CRT?style=for-the-badge&color=4ade80&label=FORKS)](https://github.com/MALIPEDD_SEKHAR/CRT/network)
+<img src="https://visitor-badge.laobi.icu/badge?page_id=MALIPEDD_SEKHAR.CRT&left_color=0f172a&right_color=7c3aed&left_text=REPO+VIEWS" />
+&nbsp;
+
 
 </div>
 
