@@ -14,7 +14,7 @@ class Node {
     // Constructor for Node with only data (next = null)
     Node(int data1) {
         data = data1;
-        next = null;
+        next = null;                            
     }
 }
 
