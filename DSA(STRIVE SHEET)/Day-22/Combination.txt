@@ -1,0 +1,253 @@
+//Some important Observation we can found when solving these probelm so ....Its getting hard.
+
+Maximum Sum Combination (Striver Sheet)
+
+This is one of the most confusing Heap problems for beginners.
+
+Don't worry about the optimal solution first.
+
+Let's understand why we need a heap.
+
+Problem Statement
+
+Given two arrays:
+
+A = [1,4,2,3]
+B = [2,5,1,6]
+
+K = 4
+
+Find the top K maximum sums.
+
+We can pick:
+
+one element from A
+one element from B
+
+and create a sum.
+
+Step 1: Generate All Sums
+
+Take A[0]=1
+
+1+2 = 3
+1+5 = 6
+1+1 = 2
+1+6 = 7
+
+Take A[1]=4
+
+4+2 = 6
+4+5 = 9
+4+1 = 5
+4+6 = 10
+
+Take A[2]=2
+
+2+2 = 4
+2+5 = 7
+2+1 = 3
+2+6 = 8
+
+Take A[3]=3
+
+3+2 = 5
+3+5 = 8
+3+1 = 4
+3+6 = 9
+
+All sums:
+
+3 6 2 7
+6 9 5 10
+4 7 3 8
+5 8 4 9
+Step 2: Sort Descending
+10 9 9 8 8 7 7 6 6 5 5 4 4 3 3 2
+
+Top 4:
+
+10 9 9 8
+
+Answer:
+
+[10,9,9,8]
+Brute Force
+
+Generate all sums.
+
+for(i=0;i<n;i++)
+{
+    for(j=0;j<n;j++)
+    {
+        sums.add(A[i]+B[j]);
+    }
+}
+
+If
+
+n = 1000
+
+Then:
+
+1000 * 1000
+=
+10,00,000 sums
+
+Very expensive.
+
+Important Observation
+
+Let's sort arrays.
+
+A = [4,3,2,1]
+B = [6,5,2,1]
+
+Now look carefully.
+
+Largest element of A = 4
+
+Largest element of B = 6
+
+Therefore:
+
+4 + 6 = 10
+
+must be the largest sum.
+
+Think Like a Matrix
+
+Create a matrix.
+
+        6   5   2   1
+
+4      10   9   6   5
+
+3       9   8   5   4
+
+2       8   7   4   3
+
+1       7   6   3   2
+
+Every cell:
+
+A[i] + B[j]
+Largest Value
+
+Top-left:
+
+10
+
+is largest.
+
+So put:
+
+(10,0,0)
+
+inside Max Heap.
+
+Meaning:
+
+sum = 10
+i = 0
+j = 0
+Remove Largest
+
+Pop:
+
+10
+
+Answer list:
+
+[10]
+
+Now what could be the next largest?
+
+From position:
+
+(0,0)
+
+we can move:
+
+Down
+(1,0)
+
+3+6=9
+Right
+(0,1)
+
+4+5=9
+
+Push both.
+
+Heap:
+
+9
+9
+Remove Again
+
+Pop:
+
+9
+
+Answer:
+
+10 9
+
+Suppose popped:
+
+(1,0)
+
+Now check neighbors.
+
+Down:
+
+(2,0)
+=
+2+6
+=
+8
+
+Right:
+
+(1,1)
+=
+3+5
+=
+8
+
+Push them.
+
+Heap:
+
+9
+8
+8
+Again Remove
+
+Pop:
+
+9
+
+Answer:
+
+10 9 9
+
+Heap:
+
+8
+8
+...
+Again Remove
+
+Pop:
+
+8
+
+Answer:
+
+10 9 9 8
+
+We got K answers.
+
+Stop.
