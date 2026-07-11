@@ -30,34 +30,53 @@
 
 
 
-//find the Third max element in the array
+// //find the Third max element in the array
+// import java.util.Arrays;
+
+// class Sorting {
+//     public int thirdMax(int[] nums) {
+
+//         Arrays.sort(nums);
+
+//         int max = nums[nums.length - 1];
+//         int count = 1;
+
+//         for (int i = nums.length - 2; i >= 0; i--) {
+
+//             if (nums[i] != nums[i + 1]) {
+
+//                 count++;
+
+//                 if (count == 3) {
+//                     return nums[i];
+//                 }
+//             }
+//         }
+
+//         return max;
+//     }
+//     public static void main(String[] args) {
+//         Sorting s = new Sorting();
+//         int arr[] = { 2, 2, 3, 1 };
+//         System.out.println(s.thirdMax(arr));
+//     }
+// }
+
+
+//Array Partition
 import java.util.Arrays;
 
-class Sorting {
-    public int thirdMax(int[] nums) {
+class  Sorting {
+    public int arrayPairSum(int[] nums) {
 
         Arrays.sort(nums);
 
-        int max = nums[nums.length - 1];
-        int count = 1;
+        int sum = 0;
 
-        for (int i = nums.length - 2; i >= 0; i--) {
-
-            if (nums[i] != nums[i + 1]) {
-
-                count++;
-
-                if (count == 3) {
-                    return nums[i];
-                }
-            }
+        for (int i = 0; i < nums.length; i += 2) {
+            sum += nums[i];
         }
 
-        return max;
-    }
-    public static void main(String[] args) {
-        Sorting s = new Sorting();
-        int arr[] = { 2, 2, 3, 1 };
-        System.out.println(s.thirdMax(arr));
+        return sum;
     }
 }
